@@ -1,8 +1,13 @@
-using namespace std;
+#include <iostream>
+#include <conio.h>
+#include <windows.h>
 
+
+using namespace std;
+// Variables que almacenan la posición actual de la serpiente
 int x = 10, y = 10;
 char tecla;
-
+// Dibuja el mapa y muestra la posición de la serpiente
 void dibujarMapa() {
     system("cls");
 
@@ -20,7 +25,7 @@ void dibujarMapa() {
 
     cout << "\nMover con W A S D";
 }
-
+// Detecta las teclas WASD y actualiza la posición de la serpiente
 void mover() {
 
     if (_kbhit()) {
